@@ -9,8 +9,10 @@ def read_last_number_from_file():
         print(last_nmumber)
         return last_nmumber
     
-last_number = read_last_number_from_file()
-print(last_number)
-doubled_number = double_number(last_number)
-print(doubled_number)
-time.sleep(1)
+if __name__ == "__main__":
+    while True:     
+        last_number = read_last_number_from_file()
+        print(last_number)
+        doubled_number = double_number(last_number)
+        print(doubled_number)
+        time.sleep(1)

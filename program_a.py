@@ -7,5 +7,7 @@ def random_number():
     with open("resources/file.txt", "a") as file:
         file.write(f"{num}\n")
 
-
-random_number()
+if __name__ == "__main__":
+    while True:
+        random_number()
+        time.sleep(1)
